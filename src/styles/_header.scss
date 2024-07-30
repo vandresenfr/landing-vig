@@ -1,0 +1,47 @@
+.header {
+    &__container{
+        display: flex;
+        justify-content: space-between;
+        padding: 16px 160px;
+        border-bottom: 3px solid red;
+    }
+
+    &__logo{
+        max-width: 220px;
+
+    }
+
+    &__links{
+        display: flex;
+        list-style: none;
+        align-items: center;
+
+        &__item{
+            margin-left: 56px;
+
+            a {
+                color: #fff;
+                text-decoration: none;
+                text-transform: uppercase;
+                font-style: italic;
+            }
+        }
+    }
+}
+
+@media (max-width:768px){
+    .header {
+        &__container{
+            padding: 16px 16px;
+        }
+    
+        &__logo{
+            max-width: 120px;    
+        }
+            &__links{
+                &__item{
+                margin-left: 12px;
+            }
+        }
+    }
+}
